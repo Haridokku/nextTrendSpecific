@@ -1,0 +1,48 @@
+.list-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+.img {
+  width: 100px;
+  height: 200px;
+}
+.title {
+  color: #171f46;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.brand {
+  color: #616e7c;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.price-container {
+  display: flex;
+}
+.price {
+  color: #171f46;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.blue {
+  background-color: blue;
+  display: flex;
+  padding: 10px;
+}
+.rating {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.star {
+  width: 20px;
+  height: 20px;
+}
