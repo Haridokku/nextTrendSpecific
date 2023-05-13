@@ -122,17 +122,24 @@ class ProductItemDetails extends Component {
         </p>
         <hr className="horizontal-line" />
         <div className="zoom-container">
-          <BsDashSquare
+          <button
+            type="button"
             data-testid="minus"
-            className="size"
-            onClick={this.onDecreaseCount()}
-          />
+            onClick={this.onDecreaseCount}
+            className="button"
+          >
+            <BsDashSquare className="size" />
+          </button>
+
           <p className="describe">1</p>
-          <BsPlusSquare
+          <button
+            type="button"
             data-testid="plus"
-            className="size"
-            onClick={this.onIncreaseCount()}
-          />
+            onClick={this.onIncreaseCount}
+            className="button"
+          >
+            <BsPlusSquare className="size" />
+          </button>
         </div>
         <button type="button" className="rating">
           ADD TO CART
@@ -160,11 +167,7 @@ class ProductItemDetails extends Component {
         className="error"
       />
       <h1 className="head">Product Not Found</h1>
-      <button
-        type="button"
-        className="rating"
-        onClick={this.returnToProducts()}
-      >
+      <button type="button" className="rating" onClick={this.returnToProducts}>
         Continue Shopping
       </button>
     </div>
@@ -195,3 +198,4 @@ class ProductItemDetails extends Component {
 }
 
 export default ProductItemDetails
+
